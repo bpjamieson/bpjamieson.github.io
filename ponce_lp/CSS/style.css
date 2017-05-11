@@ -1,0 +1,90 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.wrapper {
+  margin: 20px 150px;
+}
+
+.header-bar {
+
+  background-color: #0c77af;
+  height:150px;
+}
+
+.header-bar p {
+  float: right;
+  padding-right: 10px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.header-bar img {
+display: block;
+padding-left: 50px;
+padding-top: 20px;
+}
+
+header {
+  background-image: url("../images/ponce_stage.jpg");
+  height: 100vh;
+  background-position:left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  position: absolute;
+  right: 350px;
+  top: 250px;
+  width:450px;
+  background-color: #0e334b;
+  padding:50px;
+}
+
+form p {
+  color: #fff;
+  font-size: 30px;
+  text-align: left;
+  margin: 0;
+}
+
+input,
+textarea,
+button {
+width: 100%;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+input, button {
+  height: 50px;
+  padding:15px;
+  margin-top: 20px;
+}
+
+textarea {
+  height: 150px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: all 350ms ease-in-out;
+}
+
+button:hover {
+  color: #0e334b;
+  font-weight: bold;
+  background-color: #fff;
+  border: none;
+
+}
