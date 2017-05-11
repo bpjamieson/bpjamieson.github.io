@@ -2,14 +2,6 @@
 box-sizing: border-box;
 }
 
-body {
-  background-color: #f1f1f1;
-}
-
-.wrapper {
-  margin: 20px 150px;
-}
-
 .header-bar {
 
   background-color: #0c77af;
@@ -29,26 +21,41 @@ padding-left: 50px;
 padding-top: 20px;
 }
 
+/*HEADER WITH FORM*/
+
 header {
   background-image: url("../images/ponce_stage.jpg");
-  height: 100vh;
   background-position:left;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.header-form {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+
+}
+
+.empty-space {
+  width: 65%;
+}
+
+.form-space {
+  width: 35%;
+}
+
+/*FORM STYLES*/
+
 form {
-  position: absolute;
-  right: 350px;
-  top: 250px;
-  width:450px;
+  width:400px;
   background-color: #0e334b;
   padding:50px;
 }
 
 form p {
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   text-align: left;
   margin: 0;
 }
