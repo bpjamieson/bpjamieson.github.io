@@ -80,6 +80,9 @@ color: rgba(255,255,255, 0.7);
 
 
 .section-stage {
+  background-image: url('../images/ponce_stage.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
 background-color: #0e334b;
   height: 665px;
 }
@@ -95,9 +98,11 @@ background-color: #0e334b;
 
  }
 form {
-  position: relative;
-  left: 800px;
-  top: 30px;
+position: absolute;
+right: 15%;
+top:20%;
+  /*position: relative;
+  left: 800px;*/
   border-top: 20px solid #f1f1f1;
   padding: 20px;
   height: 700px;
@@ -260,6 +265,14 @@ color: rgba(14, 51, 75, 0.7);
 
 
 /*******MEDIA QUERIES*******/
+
+@media screen and (max-width:1530px){
+.section-header h1 {
+font-size: 54px;
+padding-top:20px;
+}
+
+}
 
 @media screen and (max-width:1260px){
 form {
