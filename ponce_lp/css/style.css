@@ -154,7 +154,7 @@ button:hover {
 
 .flex-wrapper {
   text-align: center;
-  margin:100px 25px;
+  margin:150px 150px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -260,6 +260,22 @@ color: rgba(14, 51, 75, 0.7);
 
 }
 
+.current-players-footer {
+  display: none;
+  text-align: center;
+}
+
+.current-players-footer a {
+  color: #0e334b;
+  text-decoration: none;
+  transition: all 350ms ease-in-out;
+}
+
+.current-players-footer a:hover {
+color: rgba(14,51,75,0.7);
+}
+
+
 
 
 
@@ -309,12 +325,21 @@ display: none;
   margin-left: 75px;
 }
 
-.section-about {
+.section-about-section {
   width: 100%;
 }
 
 .flex-wrapper {
   width: 100%;
+  margin: 50px 0;
+}
+
+.current-players {
+  display: none;
+}
+
+.current-players-footer {
+  display: block;
 }
 
 }
