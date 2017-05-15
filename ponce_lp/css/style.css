@@ -1,8 +1,8 @@
 * {
-box-sizing: border-box;
-/*font-family: 'Open Sans', sans-serif;*/
-font-family: 'Taviraj', serif;
--webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Taviraj', serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -36,11 +36,8 @@ body {
 }
 
 .current-players a:hover {
-color: rgba(255,255,255, 0.7);
+  color: rgba(255,255,255, 0.7);
 }
-
-
-
 
 .section-header {
   background-color: #0c77af;
@@ -83,7 +80,7 @@ color: rgba(255,255,255, 0.7);
   background-image: url('../images/ponce_stage.jpg');
   background-repeat: no-repeat;
   background-position: left;
-background-color: #0e334b;
+  background-color: #0e334b;
   height: 665px;
 }
 
@@ -91,25 +88,36 @@ background-color: #0e334b;
 
 /********FORM*********/
 
- form h3 {
-   color: grey;
-   font-weight: 400;
-   font-size: 20px;
+form h3 {
+  color: grey;
+  font-weight: 400;
+  font-size: 20px;
 
- }
-form {
-position: absolute;
-right: 15%;
-top:20%;
+}
+.desktop-form {
+  position: absolute;
+  right: 10%;
+  top:25%;
   /*position: relative;
   left: 800px;*/
   border-top: 20px solid #f1f1f1;
   padding: 20px;
   height: 700px;
   width: 30%;
-
   background-color: #f8f8f9;
 }
+
+.mobile-form {
+  border-top: 20px solid #f1f1f1;
+  padding: 20px;
+  background-color: #f8f8f9;
+  display: none;
+}
+
+.mobile-form h3 {
+  text-align: center;
+}
+
 input, button, textarea {
   width:100%;
   display: block;
@@ -150,11 +158,13 @@ button:hover {
   background-color: #fff;
 }
 
+
+
 /*******PLAY SECTION*******/
 
 .flex-wrapper {
   text-align: center;
-  margin:150px 150px;
+  margin:150px 100px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -235,19 +245,19 @@ button:hover {
   text-align: center;
   padding-top: 130px;
   height: 300px;
-background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /*******FOOTER SECTION*******/
 footer {
 
   height: 150px;
-    text-align: right;
-    background-color: #fff;
+  text-align: right;
+  background-color: #fff;
 }
 
 footer i {
-padding: 30px;
+  padding: 30px;
   color:#0e334b;
 }
 
@@ -256,7 +266,7 @@ footer a i {
 }
 
 footer a i:hover {
-color: rgba(14, 51, 75, 0.7);
+  color: rgba(14, 51, 75, 0.7);
 
 }
 
@@ -272,7 +282,7 @@ color: rgba(14, 51, 75, 0.7);
 }
 
 .current-players-footer a:hover {
-color: rgba(14,51,75,0.7);
+  color: rgba(14,51,75,0.7);
 }
 
 
@@ -283,63 +293,92 @@ color: rgba(14,51,75,0.7);
 /*******MEDIA QUERIES*******/
 
 @media screen and (max-width:1530px){
-.section-header h1 {
-font-size: 54px;
-padding-top:20px;
-}
+  .section-header h1 {
+    font-size: 54px;
+    padding-top:20px;
+  }
 
 }
 
 @media screen and (max-width:1260px){
-form {
-display: none;
-}
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-form {
+    display: block;
+  }
+
 
 }
 
 @media screen and (max-width:960px){
-.play-icons {
-  width: 100%;
-}
+  .play-icons {
+    width: 100%;
+  }
+
+  .bats-icon, .diamond-icon {
+    border-right: none;
+  }
 
 }
-
 
 @media screen and (max-width:775px){
+  #wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
   /*.header-text p,
   .header-text h1 {
-
   }*/
-.header-text p {
-  font-size: 24px;
-}
+  .header-text p {
+    font-size: 24px;
+  }
 
-.header-text h1 {
-  font-size: 48px;
-  line-height: 1;
-}
+  .header-text h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
 
-.section-header h1,
-.section-header p,
-.section-header img {
-  margin-left: 75px;
-}
+  .section-header h1,
+  .section-header p,
+  .section-header img {
+    margin-left: 75px;
+  }
 
-.section-about-section {
-  width: 100%;
-}
+  .section-about-section {
+    width: 100%;
+  }
 
-.flex-wrapper {
-  width: 100%;
-  margin: 50px 0;
-}
+  .section-about-right {
+    padding-top: 50px;
+  }
 
-.current-players {
-  display: none;
-}
+  .section-about img {
+    padding-bottom:50px;
+  }
 
-.current-players-footer {
-  display: block;
-}
+  .flex-wrapper {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+
+  .current-players {
+    display: none;
+  }
+
+  .current-players-footer {
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer a {
+    font-size: 75%;
+  }
 
 }
