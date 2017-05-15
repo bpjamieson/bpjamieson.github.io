@@ -225,6 +225,7 @@ button:hover {
   background-color: #fff;
   color: #666;
   border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
 
 }
 
@@ -237,6 +238,13 @@ button:hover {
 .section-about-right img {
   width: 40px;
 }
+
+/*******TEXT SECTION*******/
+
+.section-text {
+  padding: 125px 75px;
+}
+
 
 
 /*******YOGI SECTION*******/
@@ -329,6 +337,10 @@ footer a i:hover {
     margin: 0;
   }
 
+  .section-header {
+    height: 400px;
+  }
+
   /*.header-text p,
   .header-text h1 {
   }*/
@@ -342,9 +354,14 @@ footer a i:hover {
   }
 
   .section-header h1,
-  .section-header p,
+  .section-header p {
+    margin-left: 50px;
+  }
+
   .section-header img {
-    margin-left: 75px;
+    display: block;
+    margin: 0 auto;
+    padding-top:20px;
   }
 
   .section-about-section {
