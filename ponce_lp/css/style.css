@@ -241,6 +241,10 @@ button:hover {
 
 /*******TEXT SECTION*******/
 
+.section-text h1 {
+  text-align: center;
+}
+
 .section-text {
   padding: 125px 75px;
 }
