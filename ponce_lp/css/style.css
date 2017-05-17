@@ -1,206 +1,427 @@
-html {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
+* {
+  box-sizing: border-box;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: 'Taviraj', serif;
   -webkit-font-smoothing: antialiased;
 }
 
-
-.main-heading,
-.main-content,
-.main-icons,
-.main-quote {
-  margin: 50px 125px;
-}
-
-/*#wrapper {
-  margin: 20px auto 0 auto;
-  padding: 0 150px;
-}*/
-
-header {
-  background-color: #0c77af;
-  height: 200px;
-}
-
-.main {
-display: grid;
-grid-template-columns: 70% 30%;
-/*background-image: url('../images/ponce_stage.jpg');
-background-repeat: no-repeat;
-background-position: left;
-background-size:auto;
-height: 665px;*/
-}
-
-.hitter {
-  background-image: url('../images/ponce_stage.jpg');
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 665px;
-  grid-column: 1;
-}
-
-/******MAIN FORM******/
-.main-form {
-  grid-column: 2;
-  background-color: #0e334b;
-}
-
-.main-form form {
-}
-
-.main-form h1 {
-  color: #fff;
-  text-align: center;
-  padding-top:20px;
-}
-
-.main-form input {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.main-form textarea {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.main-form button {
-  display: block;
-  margin: 0 auto;
-  width: 40%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #fff;
-  font-size: 1.2rem;
-  background-color: transparent;
-  border: 1px solid #fff;
-  transition: all 350ms ease-in-out;
-}
-
-.main-form i {
-  padding-left:10px;
-}
-
-.main-form button:hover {
-  color:#0e334b;
-  background-color: #fff;
-  border: none;
-}
-
-/******MOBILE FORM******/
-
-.mobile-form {
-  display: none;
-}
-
-.mobile-form h1 {
+p {
   color: #666;
-  text-align: center;
-  padding-top:20px;
 }
 
-.mobile-form input {
+#wrapper {
   display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 50px auto 0 auto;
+  width: 90%;
+  height: auto;
+  background: #fff;
 }
 
-.mobile-form textarea {
-  display: block;
-  margin: 0 auto;
-  width: 80%;
-  height: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+body {
+  background: #e5e5e4;
 }
 
-.mobile-form button {
-  display: block;
-  margin: 0 auto;
-  width: 40%;
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #0e334b;
-  font-size: 1.2rem;
-  background-color: transparent;
-  border: 1px solid #0e334b;;
+/*******HEADER*******/
+
+.current-players {
+  float: right;
+  padding: 20px 20px;
+}
+
+.current-players a {
+  color: #fff;
+  text-decoration: none;
   transition: all 350ms ease-in-out;
 }
 
-.mobile-form i {
-  padding-left:10px;
+.current-players a:hover {
+  color: rgba(255,255,255, 0.7);
 }
 
-.mobile-form button:hover {
+.section-header {
+  background-color: #0c77af;
   color:#fff;
+  height: 300px;
+}
+
+.header-text p {
+  color:#fff;
+}
+
+.section-header img {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.section-header p {
+  position: absolute;
+  top: 120px;
+  margin-left: 100px;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.section-header h1 {
+  position: absolute;
+  top: 150px;
+  margin-left: 100px;
+  font-size: 65px;
+  font-weight: 600;
+}
+
+
+/*******STAGE IMAGE*******/
+
+
+
+.section-stage {
+  background-image: url('../images/ponce_stage.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
   background-color: #0e334b;
-  border: none;
+  height: 665px;
 }
 
 
 
+/********FORM*********/
 
-/*********** MAIN ICONS **********/
+form h3 {
+  color: grey;
+  font-weight: 400;
+  font-size: 20px;
 
-.main-icons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
+}
+.desktop-form {
+  position: absolute;
+  right: 10%;
+  top:25%;
+  /*position: relative;
+  left: 800px;*/
+  border-top: 20px solid #f1f1f1;
+  padding: 20px;
+  height: 700px;
+  width: 30%;
+  background-color: #f8f8f9;
 }
 
-.main-icons img {
-  width: 40%;
+.desktop-form i,
+.mobile-form i {
+  padding-left: 10px;
 }
 
-.bat:nth-of-type(1) {
-  grid-column: 1;
-}
-
-.field:nth-of-type(2) {
-  grid-column: 2;
-}
-
-.field:nth-of-type(3) {
-  grid-column: 3;
-}
-
-
-
-
-
-
-
-
-/*MEDIA QUERIES*/
-
-@media screen and (max-width:1100px){
 .mobile-form {
-  display: block;
-}
-
-.main-form form {
+  border-top: 20px solid #f1f1f1;
+  padding: 20px;
+  background-color: #f8f8f9;
   display: none;
 }
 
-.main {
-  grid-template-columns: 100%;
-  overflow: hidden;
+.mobile-form h3 {
+  text-align: center;
 }
+
+input, button, textarea {
+  width:100%;
+  display: block;
+  margin: 25px auto;
+  letter-spacing: 1px;
+
+}
+
+input {
+  height: 60px;
+  font-size: 14px;
+  text-transform: capitalize;
+  padding-left: 10px;
+  border: 1px solid #f1f1f1;
+
+}
+
+textarea {
+  font-size: 14px;
+  height: 150px;
+  border: 1px solid #f1f1f1;
+
+}
+
+button {
+  color: #fff;
+  background-color: #0c77af;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 25px auto;
+  transition: all 400ms ease-in-out;
+}
+
+button:hover {
+  color: #0c77af;
+  background-color: #fff;
+}
+
+
+
+/*******PLAY SECTION*******/
+
+.flex-wrapper {
+  text-align: center;
+  margin:150px 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.play-icons {
+  width: 33%;
+}
+
+.play-icons img {
+  width: 100px;
+}
+
+
+.play-icons p {
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.bats-icon, .diamond-icon {
+  border-right: 1px solid #e9e9e9;
+
+}
+
+
+
+/*******ABOUT SECTION*******/
+
+.section-about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-about-section h1 {
+  font-size:36px;
+}
+.section-about-section {
+  padding: 75px 25px;
+  width: 50%;
+  text-align: center;
+}
+
+.section-about-left {
+  background-color: #0e334b;
+
+}
+
+.section-about-left p, h1 {
+  color:#fff;
+}
+
+.section-about-left img {
+  width: 400px;
+}
+
+.section-about-right {
+  background-color: #fff;
+  color: #666;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+
+}
+
+.section-about-right h3 {
+  padding-top:75px;
+  font-size: 24px;
+
+}
+
+.section-about-right img {
+  width: 40px;
+}
+
+/*******TEXT SECTION*******/
+
+.section-text {
+  padding: 125px 75px;
+  background-color: #f1f1f1;
+}
+
+.section-text h1 {
+  text-align: center;
+  color: #666;
+}
+
+
+
+
+
+/*******YOGI SECTION*******/
+
+.section-yogi {
+  text-align: center;
+  padding-top: 130px;
+  height: 300px;
+  background-color: #f1f1f1;
+}
+
+/*******FOOTER SECTION*******/
+footer {
+
+  height: 150px;
+  text-align: right;
+  background-color: #fff;
+}
+
+footer i {
+  padding: 30px;
+  color:#0e334b;
+}
+
+footer a i {
+  transition: all 350ms ease-in-out;
+}
+
+footer a i:hover {
+  color: rgba(14, 51, 75, 0.7);
+
+}
+
+.current-players-footer {
+  display: none;
+  text-align: center;
+}
+
+.current-players-footer a {
+  color: #0e334b;
+  text-decoration: none;
+  transition: all 350ms ease-in-out;
+}
+
+.current-players-footer a:hover {
+  color: rgba(14,51,75,0.7);
+}
+
+
+
+
+
+
+/*******MEDIA QUERIES*******/
+
+@media screen and (min-width:1650px){
+
+#wrapper {
+  width: 80%;
+}
+
+.desktop-form {
+  width: 25%;
+  right: 15%;
+  top:25%;
+}
+}
+
+@media screen and (max-width:1530px){
+  .section-header h1 {
+    font-size: 54px;
+    padding-top:20px;
+  }
+
+}
+
+@media screen and (max-width:1260px){
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-form {
+    display: block;
+  }
+
+
+}
+
+@media screen and (max-width:960px){
+  .play-icons {
+    width: 100%;
+  }
+
+  .bats-icon, .diamond-icon {
+    border-right: none;
+  }
+
+}
+
+@media screen and (max-width:775px){
+  #wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section-header {
+    height: 400px;
+  }
+
+  /*.header-text p,
+  .header-text h1 {
+  }*/
+  .header-text p {
+    font-size: 24px;
+  }
+
+  .header-text h1 {
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .section-header h1,
+  .section-header p {
+    margin-left: 50px;
+  }
+
+  .section-header img {
+    display: block;
+    margin: 0 auto;
+    padding-top:20px;
+  }
+
+  .section-about-section {
+    width: 100%;
+  }
+
+  .section-about-right {
+    padding-top: 50px;
+  }
+
+  .section-about img {
+    padding-bottom:50px;
+  }
+
+  .flex-wrapper {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+
+  .current-players {
+    display: none;
+  }
+
+  .current-players-footer {
+    display: block;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer a {
+    font-size: 75%;
+  }
 
 }
