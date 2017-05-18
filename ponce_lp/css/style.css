@@ -26,7 +26,7 @@ body {
 
 .current-players {
   float: right;
-  padding: 20px 20px;
+  padding:20px 60px;
 }
 
 .current-players a {
@@ -71,6 +71,12 @@ body {
   font-weight: 600;
 }
 
+.mobile-header {
+  /*display: none;*/
+  background-color: #0c77af;
+  color: #fff;
+}
+
 
 /*******STAGE IMAGE*******/
 
@@ -84,7 +90,7 @@ body {
   height: 665px;
 }
 
-.mobile-text {
+.mobile-header {
   display: none;
 }
 
@@ -369,7 +375,30 @@ footer a i:hover {
   }
 
   .section-header {
-    height: 400px;
+    display: none;
+  }
+
+  .mobile-header {
+    display:block;
+  }
+
+  .mobile-header p {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    margin:0;
+  }
+
+  .mobile-header h1 {
+    font-size: 36px;
+    text-align: center;
+    margin:0;
+  }
+
+  .mobile-header img {
+    width: 200px;
+    display: block;
+    margin:0 auto;
   }
 
   .header-text p {
@@ -385,7 +414,7 @@ footer a i:hover {
     line-height: 1;
   }
 
-  .section-header h1,
+  /*.section-header h1,
   .section-header p {
     margin-left: 50px;
   }
@@ -394,7 +423,7 @@ footer a i:hover {
     display: block;
     margin: 0 auto;
     padding-top:20px;
-  }
+  }*/
 
   .section-about-section {
     width: 100%;
