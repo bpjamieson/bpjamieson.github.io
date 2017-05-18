@@ -326,7 +326,7 @@ footer a i:hover {
 @media screen and (max-width:2000px){
 
   #wrapper {
-    width: 90%;
+    width: 80%;
   }
 
   .desktop-form {
@@ -339,6 +339,10 @@ footer a i:hover {
 
 @media screen and (max-width:1650px){
 
+  #wrapper {
+    width: 85%;
+  }
+
 .desktop-form {
   width: 30%;
   right: 12%;
@@ -347,6 +351,10 @@ footer a i:hover {
 }
 
 @media screen and (max-width:1530px){
+
+  #wrapper {
+    width: 90%;
+  }
   .section-header h1 {
     font-size: 54px;
     padding-top:20px;
