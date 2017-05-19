@@ -191,11 +191,11 @@ button:hover {
 
 
 #arrow {
-  transition: all 350ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #mobile-arrow {
-  transition: all 350ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .moved {
@@ -224,7 +224,7 @@ button:hover {
   width: 100px;
   transform: translateY(-65%);
   opacity: 0;
-  transition: all 750ms ease;
+  transition: all 1s ease;
 }
 
 
@@ -382,15 +382,15 @@ footer a i:hover {
 
 
 .social-icons {
-  transform: translateY(50px);
   opacity: 0;
-  transition: all 750ms ease;
+  transform: translateX(-50px);
+  transition: all 1s ease;
 }
 
 
 .animated-social {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 
