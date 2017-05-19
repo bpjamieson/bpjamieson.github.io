@@ -211,7 +211,7 @@ button:hover {
 
 .flex-wrapper {
   text-align: center;
-  margin:150px 100px;
+  margin:200px 100px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -225,9 +225,9 @@ button:hover {
 
 .icon-img {
   width: 100px;
-  transform: translateY(-50%);
+  transform: translateY(-65%);
   opacity: 0;
-  transition: all 550ms ease;
+  transition: all 750ms ease;
 }
 
 
