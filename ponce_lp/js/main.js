@@ -45,4 +45,10 @@ if (distanceScrolled > 2000) {
 }
 
 
+$('button').on('click' function(){
+$('h4').text('Thanks! We\'ll get back ASAP!');
+
+});
+
+
 });
