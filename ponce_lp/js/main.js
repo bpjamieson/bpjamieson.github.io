@@ -44,11 +44,4 @@ if (distanceScrolled > 2000) {
   $('.social-icons').addClass('animated-social');
 }
 
-
-$('button').on('click' function(){
-$('h4').text('Thanks! We\'ll get back ASAP!');
-
-});
-
-
 });
