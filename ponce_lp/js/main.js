@@ -13,18 +13,34 @@ $('button').hover(function(){
     $('#mobile-arrow').toggleClass('moved');
 });
 
+if (distanceScrolled > 1200) {
+  $('.baseball-icon-1').addClass('animated-baseballs');
+}
+// else {
+//   $('.baseball-icon-1').removeClass('animated-baseballs');
+// }
+
+if (distanceScrolled > 1200) {
+  $('.baseball-icon-2').addClass('animated-baseballs');
+}
+// else {
+//   $('.baseball-icon-2').removeClass('animated-baseballs');
+// }
+
+if (distanceScrolled > 1200) {
+  $('.baseball-icon-3').addClass('animated-baseballs');
+}
+// else {
+//   $('.baseball-icon-3').removeClass('animated-baseballs');
+// }
+
 if (distanceScrolled > 1600) {
   $('.icon-img').addClass('animated');
-} else {
-  $('.icon-img').removeClass('animated');
 }
-
-
-
-// if (distanceScrolled > 1400) {
-//   $('.butterfly').addClass('animated');
-// } else {
-//   $('.butterfly').removeClass('animated');
+// else {
+//   $('.icon-img').removeClass('animated');
 // }
+
+
 
 });
