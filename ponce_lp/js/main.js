@@ -40,7 +40,9 @@ if (distanceScrolled > 1600) {
 // else {
 //   $('.icon-img').removeClass('animated');
 // }
-
+if (distanceScrolled > 2000) {
+  $('.social-icons').addClass('animated-social');
+}
 
 
 });
