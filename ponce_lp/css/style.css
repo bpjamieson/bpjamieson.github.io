@@ -169,8 +169,16 @@ button {
 }
 
 button:hover {
-  color: #0c77af;
-  background-color: #fff;
+  background-color: rgba(12,119,175,0.7);
+}
+
+
+#arrow {
+  transition: all 350ms ease-in-out;
+}
+
+.moved {
+  transform: translateX(10px);
 }
 
 
@@ -330,14 +338,14 @@ footer a i:hover {
   }
 
   .desktop-form {
-    width: 30%;
-    right: 12%;
-    top:15%;
+    width: 25%;
+    right: 20%;
+    top:20%;
   }
 }
 
 
-@media screen and (max-width:1650px){
+@media screen and (max-width:1700px){
 
   #wrapper {
     width: 85%;
@@ -406,20 +414,21 @@ footer a i:hover {
     font-size: 24px;
     text-align: center;
     margin:0;
-    padding: 0 10px;
+    padding-top: 10px;
   }
 
   .mobile-header h1 {
     font-size: 36px;
     text-align: center;
     margin:0;
-    padding: 0 10px;
+    padding: 0 10px 10px 0;
   }
 
   .mobile-header img {
     width: 200px;
     display: block;
     margin:0 auto;
+    padding: 10px;
   }
 
   .header-text p {

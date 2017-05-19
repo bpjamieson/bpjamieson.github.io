@@ -1,9 +1,12 @@
 $(document).ready(function() {
-  // console.log('hello world');
-// $('button').hover(function(){
-//   $('i').animate({right: '20px'});
-// });
 
+// $('h1').text('Hello!');
+
+$('button').hover(function(){
+
+  // Add the moved class to #arrow
+  $('#arrow').toggleClass('moved');
+});
 
 
 });
