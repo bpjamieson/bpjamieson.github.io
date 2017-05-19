@@ -6,6 +6,7 @@ $('button').hover(function(){
 
   // Add the moved class to #arrow
   $('#arrow').toggleClass('moved');
+    $('#mobile-arrow').toggleClass('moved');
 });
 
 

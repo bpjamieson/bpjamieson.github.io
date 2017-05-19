@@ -177,6 +177,10 @@ button:hover {
   transition: all 350ms ease-in-out;
 }
 
+#mobile-arrow {
+  transition: all 350ms ease-in-out;
+}
+
 .moved {
   transform: translateX(10px);
 }
