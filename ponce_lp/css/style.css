@@ -207,13 +207,31 @@ button:hover {
   transform: translateX(10px);
 }
 
+/*******TEXT SECTION*******/
+
+.section-text {
+  padding: 125px 225px;
+  background-color: #f9f9f9;
+}
+
+.section-text h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #666;
+}
+
+.section-text p {
+  text-align: center;
+  font-size: 18px;
+}
+
 
 
 /*******PLAY SECTION*******/
 
 .flex-wrapper {
   text-align: center;
-  margin:200px 100px;
+  padding: 150px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -323,17 +341,7 @@ transform: translateY(0);
   width: 40px;
 }
 
-/*******TEXT SECTION*******/
 
-.section-text {
-  padding: 125px 225px;
-  background-color: #f9f9f9;
-}
-
-.section-text h1 {
-  text-align: center;
-  color: #666;
-}
 
 /*******CTA SECTION*******/
 
@@ -382,12 +390,25 @@ color: #0c77af;
 
 .section-steve {
   display: flex;
-  padding: 75px 250px;
+  padding: 100px 0;
   background-color: #f9f9f9;
 }
 
+.left-arrow,
+.right-arrow {
+  width:15%;
+  text-align: center;
+  color: #e1e1e1;
+}
+
+.left-arrow i,
+.right-arrow i {
+  position: relative;
+  padding-top: 50px;
+}
+
 .steve-image {
-  width: 40%;
+  width:30%;
 }
 
 .steve-image img {
@@ -398,8 +419,17 @@ color: #0c77af;
 }
 
 .steve-quote {
-  width: 60%;
+  width: 40%;
 }
+
+
+/*****QUOTES SECTION*******/
+
+.section-quotes {
+  display: grid;
+  grid-template: 30% 70% / 10% 30% 60% 10%;
+}
+
 
 
 
@@ -520,6 +550,10 @@ footer a i:hover {
     padding: 100px;
   }
 
+  .section-steve i {
+    display: none;
+  }
+
   .steve-image,
   .steve-quote {
     width: 100%;
@@ -536,13 +570,26 @@ footer a i:hover {
     padding-bottom: 30px;
   }
 
-
-
-
+.flex-wrapper {
+  padding: 50px 75px;
+}
 
 .flex-wrapper hr {
   display: none;
 }
+
+.section-about-section {
+  width: 100%;
+}
+
+.section-about-right {
+  padding-top: 50px;
+}
+
+.section-about img {
+  padding-bottom:50px;
+}
+
 
 }
 
@@ -607,7 +654,7 @@ footer a i:hover {
     padding-top:20px;
   }*/
 
-  .section-about-section {
+  /*.section-about-section {
     width: 100%;
   }
 
@@ -617,7 +664,7 @@ footer a i:hover {
 
   .section-about img {
     padding-bottom:50px;
-  }
+  }*/
 
   .flex-wrapper {
     width: 100%;
