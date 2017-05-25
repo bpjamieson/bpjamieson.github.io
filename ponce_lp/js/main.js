@@ -11,6 +11,7 @@ $('button').hover(function(){
   // Add the moved class to #arrow
   $('#arrow').toggleClass('moved');
     $('#mobile-arrow').toggleClass('moved');
+		  $('#cta-arrow').toggleClass('moved');
 });
 
 if (distanceScrolled > 1200) {
@@ -34,13 +35,13 @@ if (distanceScrolled > 1200) {
 //   $('.baseball-icon-3').removeClass('animated-baseballs');
 // }
 
-if (distanceScrolled > 1600) {
+if (distanceScrolled > 2135) {
   $('.icon-img').addClass('animated');
 }
 // else {
 //   $('.icon-img').removeClass('animated');
 // }
-if (distanceScrolled > 2000) {
+if (distanceScrolled > 2500) {
   $('.social-icons').addClass('animated-social');
 }
 
