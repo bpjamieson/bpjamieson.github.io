@@ -35,7 +35,7 @@ if (distanceScrolled > 1200) {
 //   $('.baseball-icon-3').removeClass('animated-baseballs');
 // }
 
-if (distanceScrolled > 2135) {
+if (distanceScrolled > 2050) {
   $('.icon-img').addClass('animated');
 }
 // else {

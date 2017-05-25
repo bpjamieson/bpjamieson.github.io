@@ -310,7 +310,7 @@ transform: translateY(0);
 .section-about-right {
   background-color: #fff;
   color: #666;
-  border-top: 1px solid #f1f1f1;
+
 }
 
 .section-about-right h3 {
@@ -327,7 +327,7 @@ transform: translateY(0);
 
 .section-text {
   padding: 125px 225px;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
 }
 
 .section-text h1 {
@@ -383,7 +383,7 @@ color: #0c77af;
 .section-steve {
   display: flex;
   padding: 75px 250px;
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
 }
 
 .steve-image {
