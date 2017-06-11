@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Lora', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/********HEADER BAR********/
+.header-bar {
+  height: 30px;
+  background-color: #000;
+}
+
+.header-bar p {
+  color: #fff;
+  position: relative;
+  left: 15%;
+  padding: 5px 0;
+}
+
+/********NAVIGATION********/
+
+nav img {
+  width:90px;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+}
+
+.nav-logo {
+  position: relative;
+  left:15%;
+  width:20%;
+}
+
+.nav-list {
+  position: relative;
+  top: 20px;
+  right: 15%;
+  width: 80%;
+  text-align: right;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  padding-left:30px;
+}
+
+.quote-button {
+  width: 175px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all 350ms ease-in-out;
+}
+
+.quote-button:hover {
+background-color: #000;
+color:#fff;
+}
+
+
+
+/********HEADER********/
+
+header h1 {
+  margin:0;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+header h2 {
+margin: 10px 0;
+color: #fff;
+font-size: 70px;
+}
+
+.header-box {
+  position: relative;
+  top: 20%;
+  left:20%;
+}
+
+header button {
+  width: 175px;
+  height: 50px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: all 350ms ease-in-out;
+}
+
+header button:hover {
+background-color: rgba(255,255,255, 0.3);
+cursor: pointer;
+}
+
+header {
+  height: 500px;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/trcs_stage.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.four-icons {
+    padding: 40px 200px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+color: #e2e2e2;
+background-color: #f9f9fa;
+}
+
+.four-icons div {
+  width: 25%;
+}
+
+.section-top h2 {
+    padding: 60px 300px;
+  text-align: center;
+  font-size: 48px;
+}
