@@ -160,6 +160,59 @@ background-color: #f9f9fa;
 }
 
 .homepage-form {
-  margin-top:60px;
+  display: flex;
+  justify-content: space-between;
   padding: 60px 300px;
+}
+
+.main-form {
+  width: 60%;
+}
+
+.form-text {
+  width: 30%;
+}
+
+/********SERVICES MORE********/
+
+.services-more {
+  background-color: #2ea3f2;
+    padding: 60px 300px;
+    justify-content: space-between;
+    color: #fff;
+  display: flex;
+  /*text-align: center;*/
+}
+
+.services-more img {
+  padding: 20px 20px 20px 0;
+  width: 100%;
+}
+
+.services-more div {
+  width: 30%;
+
+}
+
+/********FOOTER********/
+
+footer {
+  background: #000;
+  color:#fff;
+  padding: 60px 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div {
+  width: 20%;
+}
+
+footer h3 {
+  padding-bottom: 10px;
+}
+
+footer li {
+  list-style: none;
+  padding: 2px;
 }
