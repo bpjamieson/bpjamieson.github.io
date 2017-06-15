@@ -118,7 +118,7 @@ header {
 }
 
 .four-icons {
-padding: 40px 200px;
+padding: 40px 150px;
 display: flex;
 justify-content: space-between;
 text-align: center;
@@ -130,82 +130,79 @@ background-color: #f9f9fa;
   width: 25%;
 }
 
+.section-top {
+    padding: 60px 200px 40px 200px;
+
+}
+
 .section-top h2 {
-    padding: 60px 300px;
   text-align: center;
   font-size: 48px;
+  padding-bottom: 30px;
 }
 
 .main-text {
-  margin-top:60px;
-  padding: 60px 300px;
-  background-color: #464646;
-  display: flex;
-  justify-content: space-between;
+  background-color: #f9f9fa;
+  padding:60px 200px 40px 200px;
 }
 
-.main-text div {
-  width: 45%;
-  color: #fff;
-  font-size: 24px;
-}
+/********SERVICES WRAPPER********/
 
-.main-paragraph {
-  text-align: center;
-}
-
-.main-list li {
-  font-size: 30px;
-  padding-bottom: 5px;
-}
-
-.homepage-form {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 300px;
-}
-
-.main-form {
-  width: 60%;
-}
-
-.form-text {
-  width: 30%;
-}
-
-/********SERVICES MORE********/
-
-.services-more {
+.services-section {
+  display: grid;
   background-color: #2ea3f2;
-    padding: 60px 300px;
-    justify-content: space-between;
-    color: #fff;
-  display: flex;
-  /*text-align: center;*/
+    padding: 60px 150px 40px 150px;
 }
 
-.services-more img {
-  padding: 20px 20px 20px 0;
-  width: 100%;
+.services-section h2 {
+padding-bottom: 30px;
+text-align: center;
+font-size: 48px;
+color: #fff;
 }
 
-.services-more div {
-  width: 30%;
 
+.services-section h3 {
+  font-size: 24px;
+  padding-top: 20px;
 }
+
+.services-wrapper {
+  padding-top:30px;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+text-align: center;
+}
+
+.services-wrapper img {
+  padding: 20px 0;
+  width: 125px;
+  display: block;
+  margin: 0 auto;
+}
+
+.services-wrapper div {
+width: 30%;
+padding:25px 15px;
+}
+
+
+
+
 
 /********FOOTER********/
 
 footer {
   background: #000;
   color:#fff;
-  padding: 60px 300px;
+  padding: 60px 150px;
   display: flex;
   justify-content: space-between;
 }
 
 footer div {
-  width: 20%;
+  width: 23%;
 }
 
 footer h3 {
