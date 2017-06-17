@@ -6,6 +6,13 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.container {
+width:1200px;
+margin: 0 auto;
+}
+
+
+
 /********HEADER BAR********/
 .header-bar {
   height: 30px;
@@ -20,7 +27,6 @@
 }
 
 /********NAVIGATION********/
-
 nav img {
   width:90px;
 }
@@ -72,6 +78,14 @@ color:#fff;
 
 /********HEADER********/
 
+header {
+  height: 500px;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/trcs_stage.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 header h1 {
   margin:0;
   font-family: 'Permanent Marker', cursive;
@@ -109,13 +123,8 @@ background-color: rgba(255,255,255, 0.3);
 cursor: pointer;
 }
 
-header {
-  height: 500px;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/trcs_stage.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+/********FOUR ICONS********/
 
 .four-icons {
 padding: 40px 150px;
@@ -130,65 +139,84 @@ background-color: #f9f9fa;
   width: 25%;
 }
 
+/********SECTION TOP********/
+
 .section-top {
-    padding: 60px 200px 40px 200px;
-
-}
-
-.section-top h2 {
+  padding: 100px 0;
+  font-size: 36px;
   text-align: center;
-  font-size: 48px;
-  padding-bottom: 30px;
 }
 
-.main-text {
-  background-color: #f9f9fa;
-  padding:60px 200px 40px 200px;
+.section-top p {
+  padding-bottom:20px;
 }
 
-/********SERVICES WRAPPER********/
+/********SECTION MIDDLE********/
 
-.services-section {
+.section-middle {
+  padding: 100px 0;
+}
+
+.section-middle h2 {
+  padding-bottom: 10px;
+}
+
+.grid-wrapper {
   display: grid;
-  background-color: #2ea3f2;
-    padding: 60px 150px 40px 150px;
+  grid-template-columns: 10% 35% 10% 35%;
+  grid-gap: 35px;
 }
 
-.services-section h2 {
-padding-bottom: 30px;
-text-align: center;
-font-size: 48px;
-color: #fff;
+.image img {
+  width:50%;
 }
 
+.image {
+  text-align: center;
+}
 
-.services-section h3 {
+.section-middle .full-list {
   font-size: 24px;
-  padding-top: 20px;
+  padding: 20px 0 20px 155px;
 }
 
-.services-wrapper {
-  padding-top:30px;
-display: flex;
-flex-flow: row wrap;
-justify-content: space-between;
-text-align: center;
+/********SECTION MIDDLE BOTTOM********/
+
+.section-middle-bottom {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 25px;
 }
 
-.services-wrapper img {
-  padding: 20px 0;
+/********SECTION-TESTIMONIALS********/
+
+.section-testimonials {
+    padding: 100px 0;
+}
+
+.testimonial-wrapper {
+  display: grid;
+  grid-template-columns: 15% 20% 50% 15%;
+  /*grid-gap: 10px;*/
+}
+
+.testimonial-image img {
   width: 125px;
-  display: block;
-  margin: 0 auto;
+  border-radius: 50%;
 }
 
-.services-wrapper div {
-width: 30%;
-padding:25px 15px;
+.angle-right {
+  text-align: right;
 }
 
+.angle-left {
+  text-align: left;
+}
 
-
+.section-testimonials i {
+  color: #2ea3f2;
+}
 
 
 /********FOOTER********/
@@ -196,14 +224,18 @@ padding:25px 15px;
 footer {
   background: #000;
   color:#fff;
-  padding: 60px 150px;
-  display: flex;
-  justify-content: space-between;
+  padding: 100px 0;
+
 }
 
-footer div {
-  width: 23%;
+.footer-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 25px;
 }
+
 
 footer h3 {
   padding-bottom: 10px;
