@@ -21,9 +21,8 @@ margin: 0 auto;
 
 .header-bar p {
   color: #fff;
-  position: relative;
-  left: 15%;
-  padding: 5px 0;
+  /*position: relative;*/
+  padding: 5px 0 5px 15%;
 }
 
 /********NAVIGATION********/
@@ -37,24 +36,28 @@ nav {
 }
 
 .nav-logo {
-  position: relative;
+  /*position: relative;
   left:15%;
-  width:20%;
+  width:20%;*/
+  padding: 0 15%;
+
 }
 
 .nav-list {
-  position: relative;
+  /*position: relative;
   top: 20px;
   right: 15%;
   width: 80%;
+  text-align: right;*/
   text-align: right;
+  padding-top:20px;
 }
 
 .nav-list a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  padding-left:30px;
+  padding-left:75px;
 }
 
 .quote-button {
@@ -101,9 +104,11 @@ font-size: 70px;
 }
 
 .header-box {
-  position: relative;
+padding-top:5%;
+padding-left: 20%;
+  /*position: relative;
   top: 20%;
-  left:20%;
+  left:20%;*/
 }
 
 header button {
@@ -244,4 +249,35 @@ footer h3 {
 footer li {
   list-style: none;
   padding: 2px;
+}
+
+/********MEDIA QUERIES********/
+
+@media screen and (max-width:1199px){
+
+  .container, .footer-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+.section-top,
+.section-middle,
+.section-middle-bottom,
+.section-testimonials {
+  padding: 100px 125px;
+}
+
+footer {
+  padding: 100px 75px;
+}
+
+.section-middle .full-list {
+  font-size: 24px;
+  padding: 20px 0 20px 125px;
+}
+
+.nav-list {
+  display: none;
+}
+
 }
