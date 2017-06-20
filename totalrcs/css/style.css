@@ -82,7 +82,7 @@ color:#fff;
 
 header {
   height: 500px;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/trcs_stage.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/trcs_stage.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -200,40 +200,47 @@ background-color: #f9f9fa;
   grid-gap: 25px;
 }
 
-/********SECTION-TESTIMONIALS********/
+/********SECTION-THREE-BOXES********/
 
-.section-testimonials {
-    padding: 100px 0;
-}
-
-.testimonial-wrapper {
+.section-three-boxes {
   display: grid;
-  grid-template-columns: 15% 20% 50% 15%;
-  /*grid-gap: 10px;*/
+  grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
-.testimonial-image img {
-  width: 125px;
-  border-radius: 50%;
+.box {
+  height: 350px;
+  text-align: center;
 }
 
-.angle-right {
-  text-align: right;
+.box h3 {
+  font-size: 24px;
+  padding: 50px 10px;
 }
 
-.angle-left {
-  text-align: left;
+.box p {
+  font-size: 16px;
+  padding: 0 50px;
 }
 
-.section-testimonials i {
-  color: #2ea3f2;
+.box1 {
+  background-color: #1bf72c;
 }
+
+.box2 {
+  background-color: #20fdfe;
+}
+
+.box3 {
+background-color: rgb(212,39,35);
+}
+
 
 
 /********FOOTER********/
 
 footer {
-  background: #000;
+  background: url(../images/black_thread.png);
+  height: 400px;
   color:#fff;
   padding: 100px 0;
 
@@ -242,8 +249,13 @@ footer {
 .footer-wrapper {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-column-gap: 25px;
+  grid-template-columns: 20% 25% 20% 35%;
+}
+
+.footer-image,
+.footer-about,
+.footer-contact {
+  padding:0 50px;
 }
 
 
@@ -255,6 +267,45 @@ footer li {
   list-style: none;
   padding: 2px;
 }
+
+.footer-form input,
+.footer-form textarea,
+.footer-form button {
+  display: block;
+}
+
+.footer-form input {
+  margin: 5px 0;
+  padding:10px 0;
+  width: 350px;
+  letter-spacing: 1px;
+}
+
+.footer-form textarea {
+  margin: 5px 0;
+  padding: 10px 0;
+  width: 350px;
+  height: 150px;
+}
+
+.footer-form button {
+  background-color: #1bf72c;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 5px 0;
+  padding: 15px 0;
+  width: 200px;
+  transition: all 350ms ease-in-out;
+}
+
+.footer-form button:hover {
+  background-color: rgba(27,247,44,0.6);
+}
+
+
 
 /********MEDIA QUERIES********/
 
@@ -302,6 +353,30 @@ footer {
   grid-template-columns: 100%;
   grid-gap: 25px;
 }
+
+.section-three-boxes {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.footer-about,
+.footer-services,
+.footer-form {
+  display: none;
+}
+
+.footer-contact {
+  padding-top: 50px;
+}
+
+.footer-wrapper {
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+
 }
 
 
@@ -335,7 +410,7 @@ footer {
   }
 
   .section-middle .full-list {
-    padding: 20px 0 20px 110px;
+    padding: 10px 0 10px 98px;
   }
 
   .main-text {
@@ -347,6 +422,10 @@ footer {
     padding: 15px;
 
 }
+
+
+
+
 
 
 
