@@ -48,6 +48,7 @@ padding-top: 40px;
 }
 
 .nav-list a {
+  text-transform: uppercase;
   text-decoration: none;
   color: #000;
   font-size: 18px;
@@ -83,14 +84,6 @@ header {
   background-repeat: no-repeat;
 }
 
-header h1 {
-  margin:0;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 40px;
-  color: #fff;
-  font-weight: lighter;
-}
-
 header h2 {
 margin: 10px 0;
 color: #fff;
@@ -98,7 +91,7 @@ font-size: 70px;
 }
 
 .header-box {
-padding-top:5%;
+padding-top:8%;
 padding-left: 20%;
   /*position: relative;
   top: 20%;
@@ -141,25 +134,53 @@ background-color: #f9f9fa;
 /********SECTION TOP********/
 
 .section-top {
-  padding: 100px 0;
+  padding: 50px 0;
   font-size: 36px;
   text-align: center;
 }
+
+.section-top-logo img {
+  width:100px;
+}
+
+.section-top h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+}
+
 
 .section-top p {
   padding-bottom:20px;
 }
 
+/********TEST********/
+
+
+
+
+
+
 /********SECTION MIDDLE********/
 
 .section-middle {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
-.section-middle h1 {
+.section-middle-title {
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+}
+
+.services-title h3 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 36px;
   padding-bottom: 30px;
   text-align: center;
+}
+
+.line-1,
+.line-2 {
+  padding-top: 20px;
 }
 
 .section-middle h2 {
@@ -232,7 +253,6 @@ background-color: rgb(212,39,35);
 
 footer {
   background: url(../images/black_thread.png);
-  height: 400px;
   color:#fff;
   padding: 100px 0;
 
@@ -353,8 +373,7 @@ footer {
 }
 
 .footer-about,
-.footer-services,
-.footer-form {
+.footer-services {
   display: none;
 }
 
@@ -362,8 +381,13 @@ footer {
   padding-top: 50px;
 }
 
+.footer-form {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
 .footer-wrapper {
-  height: auto;
   display: grid;
   grid-template-columns: 100%;
   text-align: center;
