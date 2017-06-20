@@ -6,12 +6,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.container {
-margin: 0 200px;
-}
-
-
-
 /********HEADER BAR********/
 .header-bar {
   height: 30px;
@@ -20,11 +14,13 @@ margin: 0 200px;
 
 .header-bar p {
   color: #fff;
-  /*position: relative;*/
-  padding: 5px 0 5px 15%;
+  position: relative;
+  left: 15%;
+  padding: 5px 0;
 }
 
 /********NAVIGATION********/
+
 nav img {
   width:90px;
 }
@@ -35,28 +31,24 @@ nav {
 }
 
 .nav-logo {
-  /*position: relative;
+  position: relative;
   left:15%;
-  width:20%;*/
-  padding: 0 15%;
-
+  width:20%;
 }
 
 .nav-list {
-  /*position: relative;
+  position: relative;
   top: 20px;
   right: 15%;
   width: 80%;
-  text-align: right;*/
   text-align: right;
-  padding-top:20px;
 }
 
 .nav-list a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  padding-left:75px;
+  padding-left:30px;
 }
 
 .quote-button {
@@ -80,14 +72,6 @@ color:#fff;
 
 /********HEADER********/
 
-header {
-  height: 500px;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/trcs_stage.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 header h1 {
   margin:0;
   font-family: 'Permanent Marker', cursive;
@@ -103,11 +87,9 @@ font-size: 70px;
 }
 
 .header-box {
-padding-top:5%;
-padding-left: 20%;
-  /*position: relative;
+  position: relative;
   top: 20%;
-  left:20%;*/
+  left:20%;
 }
 
 header button {
@@ -127,8 +109,13 @@ background-color: rgba(255,255,255, 0.3);
 cursor: pointer;
 }
 
-
-/********FOUR ICONS********/
+header {
+  height: 500px;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../images/trcs_stage.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .four-icons {
 padding: 40px 150px;
@@ -143,121 +130,80 @@ background-color: #f9f9fa;
   width: 25%;
 }
 
-/********SECTION TOP********/
-
 .section-top {
-  padding: 100px 0;
-  font-size: 36px;
+    padding: 60px 200px 40px 200px;
+
+}
+
+.section-top h2 {
   text-align: center;
-}
-
-.section-top p {
-  padding-bottom:20px;
-}
-
-/********SECTION MIDDLE********/
-
-.section-middle {
-  padding: 100px 0;
-}
-
-.section-middle h1 {
-  font-size: 36px;
+  font-size: 48px;
   padding-bottom: 30px;
-  text-align: center;
 }
 
-.section-middle h2 {
-  padding-bottom: 10px;
+.main-text {
+  background-color: #f9f9fa;
+  padding:60px 200px 40px 200px;
 }
 
-.grid-wrapper {
-  padding-top: 60px;
+/********SERVICES WRAPPER********/
+
+.services-section {
   display: grid;
-  grid-template-columns: 10% 35% 10% 35%;
-  grid-gap: 35px;
+  background-color: #2ea3f2;
+    padding: 60px 150px 40px 150px;
 }
 
-.image img {
-  width:50%;
+.services-section h2 {
+padding-bottom: 30px;
+text-align: center;
+font-size: 48px;
+color: #fff;
 }
 
-.image {
-  text-align: center;
-}
 
-.section-middle .full-list {
+.services-section h3 {
   font-size: 24px;
-  padding: 20px 0 20px 155px;
+  padding-top: 20px;
 }
 
-/********SECTION MIDDLE BOTTOM********/
-
-.section-middle-bottom {
-  padding: 100px 0;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 25px;
+.services-wrapper {
+  padding-top:30px;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-between;
+text-align: center;
 }
 
-/********SECTION-THREE-BOXES********/
-
-.section-three-boxes {
-  display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+.services-wrapper img {
+  padding: 20px 0;
+  width: 125px;
+  display: block;
+  margin: 0 auto;
 }
 
-.box {
-  height: 350px;
-  text-align: center;
+.services-wrapper div {
+width: 30%;
+padding:25px 15px;
 }
 
-.box h3 {
-  font-size: 24px;
-  padding: 50px 10px;
-}
 
-.box p {
-  font-size: 16px;
-  padding: 0 50px;
-}
-
-.box1 {
-  background-color: #1bf72c;
-}
-
-.box2 {
-  background-color: #20fdfe;
-}
-
-.box3 {
-background-color: rgb(212,39,35);
-}
 
 
 
 /********FOOTER********/
 
 footer {
-  background: url(../images/black_thread.png);
-  height: 400px;
+  background: #000;
   color:#fff;
-  padding: 100px 0;
-
+  padding: 60px 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-wrapper {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 20% 25% 20% 35%;
+footer div {
+  width: 23%;
 }
-
-.footer-image,
-.footer-about,
-.footer-contact {
-  padding:0 50px;
-}
-
 
 footer h3 {
   padding-bottom: 10px;
@@ -266,168 +212,4 @@ footer h3 {
 footer li {
   list-style: none;
   padding: 2px;
-}
-
-.footer-form input,
-.footer-form textarea,
-.footer-form button {
-  display: block;
-}
-
-.footer-form input {
-  margin: 5px 0;
-  padding:10px 0;
-  width: 350px;
-  letter-spacing: 1px;
-}
-
-.footer-form textarea {
-  margin: 5px 0;
-  padding: 10px 0;
-  width: 350px;
-  height: 150px;
-}
-
-.footer-form button {
-  background-color: #1bf72c;
-  border: none;
-  color: #fff;
-  letter-spacing: 2px;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 5px 0;
-  padding: 15px 0;
-  width: 200px;
-  transition: all 350ms ease-in-out;
-}
-
-.footer-form button:hover {
-  background-color: rgba(27,247,44,0.6);
-}
-
-
-
-/********MEDIA QUERIES********/
-
-@media screen and (max-width:1199px){
-
-.container {
-  margin: 0 100px;
-}
-
-footer {
-  padding: 100px 75px;
-}
-
-/*.section-middle .full-list {
-  font-size: 24px;
-  padding: 20px 0 20px 125px;
-}*/
-
-.nav-list {
-  display: none;
-}
-
-}
-
-
-@media screen and (max-width:900px){
-
-  .container {
-    margin: 0 50px;
-  }
-
-.four-icons {
-  padding: 40px 75px;
-}
-
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: 20% 70%;
-  grid-gap: 35px;
-}
-
-.section-middle-bottom {
-  padding: 100px 0;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 25px;
-}
-
-.section-three-boxes {
-  display: grid;
-  grid-template-columns: 100%;
-}
-
-.footer-about,
-.footer-services,
-.footer-form {
-  display: none;
-}
-
-.footer-contact {
-  padding-top: 50px;
-}
-
-.footer-wrapper {
-  height: auto;
-  display: grid;
-  grid-template-columns: 100%;
-  text-align: center;
-}
-
-
-}
-
-
-
-@media screen and (max-width:450px){
-
-  .container {
-    margin: 0;
-  }
-
-  .header-box {
-    position: absolute;
-    padding-top: 20%;
-    padding-left: 10%;
-  }
-
-  .header-box h1 {
-    font-size: 40px;
-  }
-
-  .header-box h2 {
-    font-size: 48px;
-  }
-
-  .four-icons {
-    padding: 20px;
-  }
-
-  .grid-wrapper {
-    grid-gap: 20px;
-  }
-
-  .section-middle .full-list {
-    padding: 10px 0 10px 98px;
-  }
-
-  .main-text {
-    padding: 15px;
-  }
-
-  .main-image {
-    width:300px;
-    padding: 15px;
-
-}
-
-
-
-
-
-
-
-
 }
