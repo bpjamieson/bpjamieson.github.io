@@ -254,7 +254,7 @@ box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
 
 .section-three-boxes {
   display: grid;
-  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .box {
