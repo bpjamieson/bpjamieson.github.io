@@ -196,11 +196,11 @@ box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
 }
 
 .image img {
-  width:50%;
+  width:30%;
 }
 
 .image {
-  text-align: center;
+  text-align: right;
 }
 
 .wheelbarrow,
@@ -211,7 +211,7 @@ box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
 .driveway {
   opacity: 0;
   transform: translatey(-50px);
-  transition: all 1s ease;
+  transition: all 2s ease;
 }
 
 .animate-icons {
