@@ -32,7 +32,7 @@ nav img {
 
 nav {
   display: grid;
-  grid-template-columns: 15% 50% 35%;
+  grid-template-columns: 10% 55% 35%;
   margin: 0 100px;
   /*position: sticky;*/
 }
@@ -52,7 +52,7 @@ padding-top: 40px;
   text-decoration: none;
   color: #000;
   font-size: 18px;
-padding-right: 50px;
+padding-right: 40px;
 }
 
 .quote-button {
@@ -125,6 +125,9 @@ justify-content: space-between;
 text-align: center;
 color: #e2e2e2;
 background-color: #f9f9fa;
+-webkit-box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
+box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
 }
 
 .four-icons div {
@@ -152,13 +155,6 @@ background-color: #f9f9fa;
 .section-top p {
   padding-bottom:20px;
 }
-
-/********TEST********/
-
-
-
-
-
 
 /********SECTION MIDDLE********/
 
@@ -201,7 +197,6 @@ background-color: #f9f9fa;
 .image {
   text-align: center;
 }
-
 
 
 /********SECTION MIDDLE BOTTOM********/
@@ -247,8 +242,6 @@ background-color: #f9f9fa;
 background-color: rgb(212,39,35);
 }
 
-
-
 /********FOOTER********/
 
 footer {
@@ -291,6 +284,7 @@ footer li {
   padding:15px;
   width: 300px;
   letter-spacing: 1px;
+  border:none;
 }
 
 .footer-form textarea {
@@ -298,6 +292,7 @@ footer li {
   padding: 15px;
   width: 300px;
   height: 150px;
+  border:none;
 }
 
 .footer-form button {
@@ -317,8 +312,6 @@ footer li {
   background-color: rgba(27,247,44,0.6);
 }
 
-
-
 /********MEDIA QUERIES********/
 
 @media screen and (max-width:1199px){
@@ -331,14 +324,21 @@ footer {
   padding: 100px 75px;
 }
 
-/*.section-middle .full-list {
-  font-size: 24px;
-  padding: 20px 0 20px 125px;
-}*/
+.footer-wrapper {
+  grid-template-columns: 20% 30% 50%;
+}
+
+.footer-about {
+  display: none;
+}
 
 .nav-list,
 .nav-button {
   display: none;
+}
+
+.section-middle-title {
+  grid-template-columns: 30% 40% 30%;
 }
 
 }
@@ -359,6 +359,7 @@ footer {
   grid-template-columns: 20% 70%;
   grid-gap: 35px;
 }
+
 
 .section-middle-bottom {
   padding: 100px 0;
@@ -397,9 +398,46 @@ footer {
   display: none;
 }
 
+.footer-form input,
+.footer-form textarea {
+  width:200px;
+}
+
+.footer-form button {
+  width: 230px;
+}
+
 
 }
 
+@media screen and (max-width:750px){
+
+  .section-middle-title {
+  grid-template-columns: 100%;
+  text-align: center;
+  }
+
+.line-1,
+.line-2 {
+  display: none;
+}
+
+.header-bar p{
+  text-align: center;
+  padding: 5px 0;
+}
+
+nav {
+  grid-template-columns: 100%;
+}
+
+nav img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+}
 
 
 @media screen and (max-width:450px){
