@@ -25,6 +25,11 @@ margin: 0 100px;
   padding: 5px 100px 0 5px;
 }
 
+.phone-num {
+  color:#fff;
+  text-decoration: none;
+}
+
 /********NAVIGATION********/
 nav img {
   width:90px;
