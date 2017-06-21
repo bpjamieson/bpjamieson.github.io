@@ -203,6 +203,22 @@ box-shadow: 0px 10px 55px -21px rgba(0,0,0,0.3);
   text-align: center;
 }
 
+.wheelbarrow,
+.mower,
+.painter,
+.powerwasher,
+.trashcan,
+.driveway {
+  opacity: 0;
+  transform: translatey(-50px);
+  transition: all 1s ease;
+}
+
+.animate-icons {
+  opacity: 1;
+  transform: translatey(0);
+}
+
 
 /********SECTION MIDDLE BOTTOM********/
 
