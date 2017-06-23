@@ -305,6 +305,11 @@ footer {
   grid-template-columns: 20% 25% 20% 35%;
 }
 
+.google-map iframe {
+  width: 85%;
+}
+
+
 .footer-image,
 .footer-about,
 .footer-contact {
@@ -369,11 +374,73 @@ footer li {
   text-align: center;
 }
 
+
+
 .page-title h1 {
   font-size: 48px;
   letter-spacing: 2px;
   position: relative;
   top:40%;
+}
+
+
+/********CONTACT PAGE********/
+
+.contact-body {
+  display: grid;
+  grid-template-columns: 45% 45%;
+}
+
+.contact-page-form {
+  display: block;
+  margin: 50px auto;
+  background-color: #f9f9f9;
+  padding: 50px;
+  border-radius: 3px;
+}
+
+.contact-page-form h3 {
+  padding-bottom: 20px;
+}
+
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  display: block;
+}
+
+.contact-form input {
+  margin: 7px 0;
+  padding:15px;
+  width: 400px;
+  letter-spacing: 1px;
+  /*border:none;*/
+}
+
+.contact-form textarea {
+  margin: 7px 0;
+  padding: 15px;
+  width: 400px;
+  height: 250px;
+  /*border:none;*/
+}
+
+.contact-form button {
+  background-color: #1bf72c;
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 5px 0;
+  padding: 15px 0;
+  width: 300px;
+  transition: all 350ms ease-in-out;
+}
+
+.contact-form button:hover {
+  background-color: rgba(27,247,44,0.6);
 }
 
 
@@ -457,6 +524,10 @@ footer {
 .footer-form {
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
+}
+
+.google-map iframe {
   padding-top: 50px;
 }
 
@@ -551,8 +622,9 @@ nav img {
   .main-image {
     width:300px;
     padding: 15px;
-
 }
+
+
 
 
 
