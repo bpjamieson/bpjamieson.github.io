@@ -10,8 +10,6 @@
 margin: 0 100px;
 }
 
-
-
 /********HEADER BAR********/
 .header-bar {
   height: 30px;
@@ -361,6 +359,30 @@ footer li {
 .footer-form button:hover {
   background-color: rgba(27,247,44,0.6);
 }
+
+/********SECTION PAGE TITLE********/
+
+.page-title {
+  background-color: #000;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  position: relative;
+  top:40%;
+}
+
+
+
+
+
+
+
+
 
 /********MEDIA QUERIES********/
 
