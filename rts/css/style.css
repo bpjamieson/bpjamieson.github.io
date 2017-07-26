@@ -71,7 +71,7 @@ outline: none;
 
 .headercnt {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left:15%;
 }
 
@@ -79,14 +79,14 @@ outline: none;
   border:0;
   background-color:#69cbc8;
   height:6px;
-  width:50%;
+  width:30%;
 }
 
 .header-line-2 {
   border:0;
   background-color:#69cbc8;
   height:6px;
-  width:50%;
+  width:30%;
 }
 
 .first-h1 {
@@ -131,6 +131,19 @@ bottom: -975px;
 background: rgb(105,203,200);
     }
 
+    .section-1-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .blank-1-title, .blank-2-title {
+      width: 15%;
+    }
+
+    .section-1-title{
+      width: 70%;
+    }
+
     .section-1 h3 {
       text-align: center;
       font-size: 60px;
@@ -155,10 +168,6 @@ background: rgb(105,203,200);
       border:none;
       display:block;
       margin:0 auto 10px auto;
-    }
-
-    .section-1-title {
-      border: 2px dotted #fff;
     }
 
 
@@ -204,7 +213,7 @@ background: rgb(105,203,200);
 
 .phone-text li:before {
     font-family: 'FontAwesome';
-    content: '\f067';
+    content: '\f0e5';
     margin:0 10px 0 0;
 }
 
@@ -213,7 +222,7 @@ background: rgb(105,203,200);
 }
 
 .phone-text button {
-  width: 300px;
+  width: 250px;
   border: 2px solid #fff;
   background-color: transparent;
   color:#fff;
@@ -228,4 +237,103 @@ background: rgb(105,203,200);
 .phone-text button:hover {
   background-color: rgba(255,255,255,0.5);
   cursor: pointer;
+}
+
+/******* SECTION 3 *******/
+
+
+.blank-1 {
+  width: 20%;
+}
+
+.blank-2 {
+  width:20%;
+}
+.section-3-content {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.section-3 i {
+position: relative;
+left:50%;
+padding-bottom: 30px;
+}
+
+.section-3 p{
+  text-align: center;
+}
+
+.macbook-ph img {
+  padding-top:75px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+/******* SECTION 4 *******/
+
+.section-4 {
+  background-color: #f4f4f4;
+}
+
+.pricing-table-wrapper {
+  display: flex;
+    justify-content: space-between;
+
+}
+
+
+.pricing-tables {
+padding: 20px 0;
+  width: 32%;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 8px 1px rgba(200,200,200,1);
+  -moz-box-shadow: 1px 1px 8px 1px rgba(200,200,200,1);
+  box-shadow: 1px 1px 8px 1px rgba(200,200,200,1);
+}
+
+.pricing-tables ul {
+  list-style-type: none;
+  padding-top:50px;
+}
+
+.pricing-tables li {
+  padding: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.table-name {
+  font-size: 48px;
+}
+
+.section-4 button {
+  margin:20px 0;
+  width: 200px;
+  border: 2px solid #69cbc8;
+  background-color: transparent;
+  color:#69cbc8;
+  padding:15px;
+  font-size: 24px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  transition: all 350ms ease-in-out;
+}
+
+/******* SECTION 5 *******/
+
+.section-5 {
+  background-image: url("../images/bg-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-6 {
+  background-color: #000;
+  height:500px;
 }
