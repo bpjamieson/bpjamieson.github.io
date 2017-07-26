@@ -41,7 +41,7 @@ border: 1.5px solid #fff;
 font-size: 20px;
 border-radius: 50px;
 padding:20px;
-letter-spacing: 3px;
+letter-spacing: 2px;
 transition: all 350ms ease-in-out;
 position: absolute;
 top: 50px;
@@ -166,7 +166,7 @@ background: rgb(105,203,200);
 
   .section-2 {
   background: rgba(105,203,200,0.5);
-  height: 400px;
+  /*height: 400px;*/
     }
 
     .section-2-wrapper {
@@ -181,7 +181,7 @@ background: rgb(105,203,200);
     }
 
     .phone-image img {
-      width: 400px;
+      width: 325px;
     }
 
     .phone-text {
@@ -208,9 +208,24 @@ background: rgb(105,203,200);
     margin:0 10px 0 0;
 }
 
-.phone-text i {
-  color: #fff;
-  position: relative;
-  left:45%;
-padding-top:20px;
+.phone-text ul {
+  padding-bottom: 50px;
+}
+
+.phone-text button {
+  width: 300px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color:#fff;
+  padding:15px;
+  font-size: 24px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  transition: all 350ms ease-in-out;
+  /*margin-top:40px;*/
+}
+
+.phone-text button:hover {
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
 }
